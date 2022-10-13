@@ -1,9 +1,12 @@
 import React from "react";
+import ListBody from "../component/organisms/ListBody";
 
 const Home = () => {
   return (
     <div className="home_page">
-      <div className="news_left">list</div>
+      <div className="news_left">
+        <ListBody />
+      </div>
       <div className="news_right">
         <div className="news_right_hero">
           <div className="news_right_hero_main">01</div>

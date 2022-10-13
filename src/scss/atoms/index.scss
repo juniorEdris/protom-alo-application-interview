@@ -1,0 +1,71 @@
+@use "../custom" as *;
+@use "../breakpoints" as *;
+
+// List tabs css
+.list_tabs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  color: $gray;
+  border-bottom: 1px solid $gray;
+  .tab_button {
+    margin-right: 15px;
+    padding: 5px 10px;
+    font-size: 18px;
+    line-height: 23.94px;
+    font-weight: 700;
+    border-bottom: 3px solid transparent;
+    transition: color cubic-bezier(0.165, 0.84, 0.44, 1) 0.15ms;
+    &:hover {
+      border-bottom: 3px solid $guardsman-red;
+      color: $dark;
+    }
+    &.active {
+      border-bottom: 3px solid $guardsman-red;
+      color: $dark;
+      background-color: $light-muted-color;
+
+    }
+    @include tablet {
+      margin-right: 10px;
+    }
+  }
+}
+
+// newsHeading css
+.news_heading {
+  width: 100%;
+  border-bottom: 1px solid $gray;
+  display: flex;
+  font-size: $newsHeadingSize;
+  margin-bottom: 6px;
+  padding: 5px;
+  transition: color 0.15ms;
+  //   :not(:last-child) {
+  //     border-bottom: 2px solid $gray;
+  //   }
+  :hover > span {
+    color: $lochmara-blue;
+  }
+  h1 {
+    margin-right: 10px;
+    color: $gray;
+    @include tablet {
+      margin-bottom: 7px;
+    }
+  }
+  .sub_heading {
+    color: $guardsman-red;
+    &::after {
+      content: "/";
+      margin: 0 $Margin;
+    }
+  }
+  @include tablet {
+    display: inline-block;
+    font-size: $newsHeadingSize;
+    h1 {
+      margin-right: 0px;
+    }
+  }
+}

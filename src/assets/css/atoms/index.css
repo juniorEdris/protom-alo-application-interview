@@ -166,24 +166,4 @@ select {
   }
 }
 
-.home_page {
-  padding: 5px;
-}
-.home_page .news_right_hero_secondary {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-@media only screen and (min-width: 876px) {
-  .home_page {
-    display: grid;
-    grid-template-columns: 3fr 9fr;
-    grid-gap: 1.777rem;
-  }
-  .home_page .news_right {
-    display: grid;
-    grid-template-columns: 6fr 3fr;
-    grid-gap: 1.777rem;
-  }
-}
-
-/*# sourceMappingURL=home.css.map */
+/*# sourceMappingURL=index.css.map */

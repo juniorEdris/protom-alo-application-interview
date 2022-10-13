@@ -1,12 +1,9 @@
 @use "../custom" as *;
 @use "../breakpoints" as *;
+@use "../atoms" as *;
 
 .home_page {
-  border: 1px solid sandybrown;
   padding: 5px;
-  div {
-    border: 1px solid $guardsman-red;
-  }
   .news_right{
     &_hero_secondary{
         display: grid;

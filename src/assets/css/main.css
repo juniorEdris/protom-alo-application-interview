@@ -26,6 +26,10 @@ html::-webkit-scrollbar-thumb {
 
 a {
   text-decoration: none !important;
+  color: #121212;
+}
+a:hover {
+  color: #0573e6 !important;
 }
 
 ul,
@@ -58,14 +62,6 @@ textarea,
 select {
   margin: 0 !important;
   padding: 0 !important;
-}
-
-.text-light-muted {
-  color: #cbd3d9;
-}
-
-.text-muted {
-  color: #999fae;
 }
 
 .cursor-pointer {
@@ -101,12 +97,77 @@ select {
   line-height: 2.5rem;
 }
 
-.home_page {
-  border: 1px solid sandybrown;
-  padding: 5px;
+.list_tabs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  color: #949494;
+  border-bottom: 1px solid #949494;
 }
-.home_page div {
-  border: 1px solid #d60000;
+.list_tabs .tab_button {
+  margin-right: 15px;
+  padding: 5px 10px;
+  font-size: 18px;
+  line-height: 23.94px;
+  font-weight: 700;
+  border-bottom: 3px solid transparent;
+  transition: color cubic-bezier(0.165, 0.84, 0.44, 1) 0.15ms;
+}
+.list_tabs .tab_button:hover {
+  border-bottom: 3px solid #d60000;
+  color: #121212;
+}
+.list_tabs .tab_button.active {
+  border-bottom: 3px solid #d60000;
+  color: #121212;
+  background-color: rgba(229, 232, 234, 0.7294117647);
+}
+@media only screen and (min-width: 876px) {
+  .list_tabs .tab_button {
+    margin-right: 10px;
+  }
+}
+
+.news_heading {
+  width: 100%;
+  border-bottom: 1px solid #949494;
+  display: flex;
+  font-size: 14px;
+  margin-bottom: 6px;
+  padding: 5px;
+  transition: color 0.15ms;
+}
+.news_heading :hover > span {
+  color: #0573e6;
+}
+.news_heading h1 {
+  margin-right: 10px;
+  color: #949494;
+}
+@media only screen and (min-width: 876px) {
+  .news_heading h1 {
+    margin-bottom: 7px;
+  }
+}
+.news_heading .sub_heading {
+  color: #d60000;
+}
+.news_heading .sub_heading::after {
+  content: "/";
+  margin: 0 10px;
+}
+@media only screen and (min-width: 876px) {
+  .news_heading {
+    display: inline-block;
+    font-size: 14px;
+  }
+  .news_heading h1 {
+    margin-right: 0px;
+  }
+}
+
+.home_page {
+  padding: 5px;
 }
 .home_page .news_right_hero_secondary {
   display: grid;
@@ -122,6 +183,17 @@ select {
     display: grid;
     grid-template-columns: 6fr 3fr;
     grid-gap: 1.777rem;
+  }
+}
+
+.container {
+  padding: 30px 10px;
+}
+@media only screen and (min-width: 1264px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 5px;
   }
 }
 

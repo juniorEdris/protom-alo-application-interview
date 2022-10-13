@@ -1,3 +1,13 @@
-@use "custom";
-@use "breakpoints";
-@use "pages/home.scss";
+@use "custom" as *;
+@use "breakpoints" as *;
+@use "pages/home.scss" as *;
+
+
+.container{
+    padding: 30px 10px;
+    @include desktop{
+      width: 90%;
+      margin: 0 auto;
+      padding: 30px 5px;
+    }
+  }
