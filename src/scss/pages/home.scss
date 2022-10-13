@@ -1,0 +1,31 @@
+@use "../custom" as *;
+@use "../breakpoints" as *;
+
+.home_page {
+  border: 1px solid sandybrown;
+  padding: 5px;
+  div {
+    border: 1px solid $guardsman-red;
+  }
+  .news_right{
+    &_hero_secondary{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    grid-gap: $distance;
+    .news_right{
+        display: grid;
+        grid-template-columns: 6fr 3fr;
+        grid-gap: $distance;
+    }
+  }
+
+//   @include desktop {
+//     grid-template-columns: repeat(3, 1fr);
+//   }
+}

@@ -1,10 +1,12 @@
 import React from "react";
-import { PostTitle } from "./component/atoms";
+import Logo from "./component/molecules/Logo";
+import Home from "./pages/Home";
 
 const App = () => {
   return (
     <div>
-      <PostTitle>Protom Alo - প্রথম আলো | জাগো বাংলাদেশ</PostTitle>
+      <Logo />
+      <Home />
     </div>
   );
 };

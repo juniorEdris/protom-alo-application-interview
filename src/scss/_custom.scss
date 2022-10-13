@@ -1,7 +1,7 @@
-$primary: #5956e9;
-$secondary: #656973;
+$gray: #949494;
 $light: #f6f7fb;
-$dark: #292930;
+$dark: #121212;
+$guardsman-red: #d60000;
 
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 
@@ -10,9 +10,12 @@ $muted-color: #999fae;
 $light-muted-color: #cbd3d9;
 $default-font-size: 14px;
 
+// whitespacecs
+$distance: 1.777rem;
+
 // media
-$mobile-width: 600px;
-$tablet-width: 1024px;
+$desktop-width: 1264px;
+$tablet-width: 876px;
 
 // body class
 body,
@@ -101,7 +104,7 @@ select {
 
   span {
     position: absolute;
-    background-color: $primary;
+    // background-color: $primary;
     width: 2.5rem;
     height: 2.5rem;
     top: 50%;
