@@ -29,13 +29,9 @@
     }
   }
   @include desktop {
-    grid-template-columns: 3fr 6fr 3fr; // 3fr 9fr;
+    grid-template-columns: 3fr 6fr 3fr;
     .home_right {
       grid-column-start: 3;
     }
   }
-
-  //   @include desktop {
-  //     grid-template-columns: repeat(3, 1fr);
-  //   }
 }
