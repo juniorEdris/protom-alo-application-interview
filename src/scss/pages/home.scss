@@ -7,7 +7,7 @@
   .news_left {
     margin-top: 10px;
     margin-bottom: 15px;
-    @include desktop{
+    @include desktop {
       margin: 0;
     }
   }
@@ -24,10 +24,14 @@
     display: grid;
     grid-template-columns: 3fr 9fr;
     grid-gap: $distance;
-    .news_right {
-      display: grid;
-      grid-template-columns: 6fr 3fr;
-      grid-gap: $distance;
+    .home_right {
+      grid-column-start: 2;
+    }
+  }
+  @include desktop {
+    grid-template-columns: 3fr 6fr 3fr; // 3fr 9fr;
+    .home_right {
+      grid-column-start: 3;
     }
   }
 

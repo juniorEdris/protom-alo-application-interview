@@ -220,10 +220,16 @@ select {
     grid-template-columns: 3fr 9fr;
     grid-gap: 1.777rem;
   }
-  .home_page .news_right {
-    display: grid;
-    grid-template-columns: 6fr 3fr;
-    grid-gap: 1.777rem;
+  .home_page .home_right {
+    grid-column-start: 2;
+  }
+}
+@media only screen and (min-width: 1264px) {
+  .home_page {
+    grid-template-columns: 3fr 6fr 3fr;
+  }
+  .home_page .home_right {
+    grid-column-start: 3;
   }
 }
 

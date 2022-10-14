@@ -10,8 +10,12 @@ const Home = () => {
       </div>
       <div className="news_right">
         <HeroWrapper />
+        {/* <div className="order-4">ad</div>
+        <div className="order-3">1 list 1 list 1 list</div> */}
+      </div>
+      <div className="home_right">
         <div className="order-4">ad</div>
-        <div className="order-3">list</div>
+        <div className="order-3">1 list 1 list 1 list</div>
       </div>
       {/*<div className="order-5">5</div> */}
     </div>
