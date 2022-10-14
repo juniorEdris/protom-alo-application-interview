@@ -1,6 +1,12 @@
 @use "../custom" as *;
 @use "../breakpoints" as *;
 
+// list tab css
+.headings {
+  &:not(:last-child) {
+    border-bottom: 2px solid $gray;
+  }
+}
 // hero section header image css
 .hero_header_image {
   position: relative;
@@ -16,6 +22,25 @@
     }
     h3 {
       color: $light;
+    }
+  }
+}
+
+// small_ad css
+
+.small_ad {
+  margin: 10px 0;
+  h1 {
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    margin: 7px 0;
+  }
+  .ad_section {
+    padding: 1.555rem;
+    &_content {
+      height: 200px;
+      width: 100%;
     }
   }
 }

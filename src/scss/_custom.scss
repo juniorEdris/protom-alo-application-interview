@@ -26,6 +26,11 @@ $newsHeadingSize: 14px;
 // margins
 $Margin: 10px;
 
+// primary classes
+@mixin border-right-2px-gray{
+  border-right: 2px solid $light-muted-color;
+}
+
 // body class
 body,
 html {
@@ -55,7 +60,7 @@ html {
 a {
   text-decoration: none !important;
   color: $dark;
-  &:hover{
+  &:hover {
     color: $lochmara-blue !important;
   }
 }
@@ -101,6 +106,11 @@ select {
 
 .font-w-500 {
   font-weight: 500;
+}
+
+@mixin full_height_width {
+  height: 100%;
+  width: 100%;
 }
 
 .btn-rounded {

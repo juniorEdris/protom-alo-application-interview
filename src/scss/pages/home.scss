@@ -9,14 +9,23 @@
     margin-bottom: 15px;
     @include desktop {
       margin: 0;
+      .mobile_ad {
+        display: none;
+      }
     }
   }
   .news_right {
+    height: fit-content;
     &_hero_secondary {
       display: grid;
       grid-gap: 17px;
       margin-top: 13px;
       grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .home_right {
+    .desktop_ad {
+      display: none;
     }
   }
 
@@ -32,6 +41,9 @@
     grid-template-columns: 3fr 6fr 3fr;
     .home_right {
       grid-column-start: 3;
+      .desktop_ad {
+        display: block;
+      }
     }
   }
 }

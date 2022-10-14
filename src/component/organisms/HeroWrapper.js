@@ -4,7 +4,7 @@ import HeroHeadImage from "../molecules/HeroHeadImage";
 
 const HeroWrapper = () => {
   return (
-    <div>
+    <div className="hero_wrapper">
       <Heading heading={"নির্বাচিত"} customClass="selected_section" />
       <div className="news_right_hero">
         <div className="news_right_hero_main">

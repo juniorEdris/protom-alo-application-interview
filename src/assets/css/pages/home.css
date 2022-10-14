@@ -130,7 +130,6 @@ select {
 
 .news_heading {
   width: 100%;
-  border-bottom: 1px solid #949494;
   display: flex;
   font-size: 14px;
   margin-bottom: 6px;
@@ -188,6 +187,11 @@ select {
   width: 100%;
 }
 
+.ad_section {
+  height: 100%;
+  background-color: rgba(229, 232, 234, 0.7294117647);
+}
+
 .primary_overlay {
   position: absolute;
   top: 0;
@@ -207,12 +211,21 @@ select {
   .home_page .news_left {
     margin: 0;
   }
+  .home_page .news_left .mobile_ad {
+    display: none;
+  }
+}
+.home_page .news_right {
+  height: fit-content;
 }
 .home_page .news_right_hero_secondary {
   display: grid;
   grid-gap: 17px;
   margin-top: 13px;
   grid-template-columns: repeat(2, 1fr);
+}
+.home_page .home_right .desktop_ad {
+  display: none;
 }
 @media only screen and (min-width: 876px) {
   .home_page {
@@ -230,6 +243,9 @@ select {
   }
   .home_page .home_right {
     grid-column-start: 3;
+  }
+  .home_page .home_right .desktop_ad {
+    display: block;
   }
 }
 

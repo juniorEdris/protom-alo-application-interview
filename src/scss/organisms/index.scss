@@ -1,6 +1,18 @@
+@use "../custom" as *;
+@use "../breakpoints" as *;
 // Hero section image hover effects
 // .news_right_hero{
 //     img:hover{
 //         transform: scale(1.5);
 //     }
 // }
+.list_wrapper {
+  @include desktop {
+    padding-right: 10px;
+    @include border-right-2px-gray;
+  }
+}
+
+.hero_wrapper{
+    @extend .list_wrapper
+}

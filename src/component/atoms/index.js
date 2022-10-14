@@ -6,7 +6,7 @@ export const LogoImage = ({ src, alt }) => (
 );
 
 // Post elements
-export const PostImage = ({ src, alt }) => (
+export const PostImage = ({ src = "", alt = "" }) => (
   <img className="post_image" src={src} alt={alt} loading="lazy" />
 );
 
@@ -24,6 +24,8 @@ export const NewsHeading = ({ title = "", subtitle = "", heading }) => (
 export const Anchore = ({ children, id }) => (
   <span className="anchore">
     <Link to={`/details/${id}`} target="_blank">
+      {" "}
+      {/** add to var */}
       {children}
     </Link>
   </span>
@@ -49,3 +51,8 @@ export const Heading = ({ heading, customClass = "" }) => (
 // Overlay
 
 export const PrimaryOverlay = () => <div className="primary_overlay" />;
+
+// Ad Section
+export const AdSection = ({ children }) => (
+  <div className="ad_section">{children}</div>
+);

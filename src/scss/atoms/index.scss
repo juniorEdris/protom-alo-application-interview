@@ -34,15 +34,11 @@
 // newsHeading css
 .news_heading {
   width: 100%;
-  border-bottom: 1px solid $gray;
   display: flex;
   font-size: $newsHeadingSize;
   margin-bottom: 6px;
   padding: 5px;
   transition: color 0.15ms;
-  //   :not(:last-child) {
-  //     border-bottom: 2px solid $gray;
-  //   }
   :hover > span {
     color: $lochmara-blue;
   }
@@ -89,8 +85,12 @@
 
 // Post Image css
 .post_image {
+  @include full_height_width;
+}
+// Ad section css
+.ad_section {
   height: 100%;
-  width: 100%;
+  background-color: $light-muted-color;
 }
 
 // Priamry Overlay css

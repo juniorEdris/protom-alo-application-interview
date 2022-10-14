@@ -130,7 +130,6 @@ select {
 
 .news_heading {
   width: 100%;
-  border-bottom: 1px solid #949494;
   display: flex;
   font-size: 14px;
   margin-bottom: 6px;
@@ -186,6 +185,11 @@ select {
 .post_image {
   height: 100%;
   width: 100%;
+}
+
+.ad_section {
+  height: 100%;
+  background-color: rgba(229, 232, 234, 0.7294117647);
 }
 
 .primary_overlay {
