@@ -1,4 +1,5 @@
 import React from "react";
+import HeroWrapper from "../component/organisms/HeroWrapper";
 import ListBody from "../component/organisms/ListBody";
 
 const Home = () => {
@@ -8,13 +9,7 @@ const Home = () => {
         <ListBody />
       </div>
       <div className="news_right">
-        <div className="news_right_hero">
-          <div className="news_right_hero_main">01</div>
-          <div className="news_right_hero_secondary">
-            <div className="">2</div>
-            <div className="">3</div>
-          </div>
-        </div>
+        <HeroWrapper />
         <div className="order-4">ad</div>
         <div className="order-3">list</div>
       </div>

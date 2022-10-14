@@ -1,6 +1,8 @@
 @use "custom" as *;
 @use "breakpoints" as *;
 @use "pages/home.scss" as *;
+@use "molecules" as *;
+@use "organisms/" as *;
 
 
 .container{

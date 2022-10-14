@@ -166,4 +166,34 @@ select {
   }
 }
 
+.selected_section {
+  padding-bottom: 0.4444rem;
+  font-size: 18px;
+  margin: 7px 0;
+}
+.selected_section::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: #0573e6;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  top: 0.222rem;
+  margin-right: 0.55556rem;
+}
+
+.post_image {
+  height: 100%;
+  width: 100%;
+}
+
+.primary_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
 /*# sourceMappingURL=index.css.map */

@@ -7,12 +7,12 @@ export const LogoImage = ({ src, alt }) => (
 
 // Post elements
 export const PostImage = ({ src, alt }) => (
-  <img src={src} alt={alt} loading="lazy" />
+  <img className="post_image" src={src} alt={alt} loading="lazy" />
 );
 
-export const NewsHeading = ({ title = "", subtitle = "" }) => (
+export const NewsHeading = ({ title = "", subtitle = "", heading }) => (
   <div className="news_heading">
-    <h1>১</h1>
+    <Heading heading={heading} />
     <h3 className="heading">
       {subtitle && <span className="sub_heading">{subtitle}</span>}
       {title}
@@ -41,3 +41,11 @@ export const TabButton = ({ tab, customClass, handleTab }) => (
     {tab}
   </span>
 );
+
+export const Heading = ({ heading, customClass = "" }) => (
+  <h1 className={`${customClass}`}>{heading}</h1>
+);
+
+// Overlay
+
+export const PrimaryOverlay = () => <div className="primary_overlay" />;

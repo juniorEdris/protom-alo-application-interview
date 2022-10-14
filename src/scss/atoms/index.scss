@@ -24,7 +24,6 @@
       border-bottom: 3px solid $guardsman-red;
       color: $dark;
       background-color: $light-muted-color;
-
     }
     @include tablet {
       margin-right: 10px;
@@ -68,4 +67,38 @@
       margin-right: 0px;
     }
   }
+}
+
+// Selected section css
+.selected_section {
+  padding-bottom: 0.4444rem;
+  font-size: 18px;
+  margin: 7px 0;
+  &::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: $lochmara-blue;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    top: 0.222rem;
+    margin-right: 0.55556rem;
+  }
+}
+
+// Post Image css
+.post_image {
+  height: 100%;
+  width: 100%;
+}
+
+// Priamry Overlay css
+
+.primary_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }

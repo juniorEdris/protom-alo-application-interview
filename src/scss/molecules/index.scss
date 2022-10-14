@@ -1,0 +1,21 @@
+@use "../custom" as *;
+@use "../breakpoints" as *;
+
+// hero section header image css
+.hero_header_image {
+  position: relative;
+  .headline {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    .news_heading {
+      border: none !important;
+    }
+    h1 {
+      color: $yellow;
+    }
+    h3 {
+      color: $light;
+    }
+  }
+}

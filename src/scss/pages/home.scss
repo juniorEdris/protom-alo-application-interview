@@ -4,10 +4,19 @@
 
 .home_page {
   padding: 5px;
-  .news_right{
-    &_hero_secondary{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+  .news_left {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    @include desktop{
+      margin: 0;
+    }
+  }
+  .news_right {
+    &_hero_secondary {
+      display: grid;
+      grid-gap: 17px;
+      margin-top: 13px;
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
@@ -15,14 +24,14 @@
     display: grid;
     grid-template-columns: 3fr 9fr;
     grid-gap: $distance;
-    .news_right{
-        display: grid;
-        grid-template-columns: 6fr 3fr;
-        grid-gap: $distance;
+    .news_right {
+      display: grid;
+      grid-template-columns: 6fr 3fr;
+      grid-gap: $distance;
     }
   }
 
-//   @include desktop {
-//     grid-template-columns: repeat(3, 1fr);
-//   }
+  //   @include desktop {
+  //     grid-template-columns: repeat(3, 1fr);
+  //   }
 }

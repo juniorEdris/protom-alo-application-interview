@@ -5,7 +5,7 @@ const Headings = ({ title, subtitle, id }) => {
   return (
     <div className="headings" key={id}>
       <Anchore id={id}>
-        <NewsHeading title={title} subtitle={subtitle} />
+        <NewsHeading title={title} subtitle={subtitle} heading={"১"} />
       </Anchore>
     </div>
   );
