@@ -7,7 +7,7 @@
 
 # Start the APP
 
-    > first clone the repository -  [Git Repository] (https://github.com/juniorEdris/protom-alo-application-interview.git)
+    > first clone the repository - https://github.com/juniorEdris/protom-alo-application-interview.git
 
     > run npm/yarn install for install all the necessary dipendencies
     
