@@ -7,7 +7,11 @@
 
 # Start the APP
 
-    > first clone the repository - https://github.com/juniorEdris/protom-alo-application-interview.git
+    > first clone the repository
+    
+    # Repository
+    
+        https://github.com/juniorEdris/protom-alo-application-interview.git
 
     > run npm/yarn install for install all the necessary dipendencies
     
@@ -17,4 +21,4 @@
     
  # Hosted View URL
  
-    > https://protom-alo-application-interview.vercel.app/
+    https://protom-alo-application-interview.vercel.app/
