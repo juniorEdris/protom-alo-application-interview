@@ -1,7 +1,7 @@
 import React from "react";
 import { Anchore, NewsHeading } from "../atoms";
 
-const Headings = ({ details, id, customClass = "" }) => {
+const Headings = ({ details = {}, id, customClass = "" }) => {
   const handleDetails = (topic) => {
     localStorage.setItem("details", JSON.stringify(topic));
   };
@@ -11,7 +11,7 @@ const Headings = ({ details, id, customClass = "" }) => {
         <NewsHeading
           title={details?.headline}
           subtitle={details?.subheadline}
-          heading={"১"}
+          heading={details?.sort}
         />
       </Anchore>
     </div>

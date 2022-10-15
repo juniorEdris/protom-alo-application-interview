@@ -6,9 +6,7 @@ import DetailsContent from "../component/organisms/DetailsContent";
 const NewsDetails = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const [details, setDetails] = useState(
-    JSON.parse(localStorage.getItem("details")) || {}
-  );
+  const [details] = useState(JSON.parse(localStorage.getItem("details")) || {});
 
   useEffect(() => {
     if (!id || !details?.id) {

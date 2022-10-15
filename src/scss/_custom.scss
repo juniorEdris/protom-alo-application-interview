@@ -6,7 +6,7 @@ $lochmara-blue: #0573e6;
 $yellow: #ffb300;
 $emperor: #555;
 
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+@import url('https://fonts.maateen.me/bangla/font.css');
 
 // variables
 // $muted-color: #999fae;
@@ -21,7 +21,7 @@ $desktop-width: 1264px;
 $tablet-width: 876px;
 
 // font sizes
-$newsHeadingSize: 14px;
+$newsHeadingSize: 16px;
 // $newsHeadingSizeDesktop: ;
 
 // margins
@@ -75,7 +75,7 @@ $Margin: 10px;
 body,
 html {
   overflow-x: hidden;
-  font-family: "DM Sans", sans-serif;
+  font-family: 'Bangla', Arial, sans-serif !important;
   padding-right: 0 !important;
   font-size: $default-font-size;
   font-weight: normal;

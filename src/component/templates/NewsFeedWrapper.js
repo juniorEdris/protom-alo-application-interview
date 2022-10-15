@@ -1,7 +1,7 @@
 import React from "react";
 import { Anchore } from "../atoms";
 import NewsFeedContent from "../organisms/NewsFeedContent";
-import data from "../../utils/newsfeedData.json";
+import data from "../../utils/newsfeedData";
 
 const NewsFeedWrapper = () => {
   const handleDetails = (topic) => {

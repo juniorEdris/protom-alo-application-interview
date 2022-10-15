@@ -71,6 +71,7 @@
 .full_ad {
   margin: 10px 0;
   padding: 1.555rem;
+  border-top: 1px solid rgba(229, 232, 234, 0.7294117647);
   .ad_section {
     padding: 1.555rem;
     &_content {
@@ -80,6 +81,12 @@
       height: 100px;
       width: 100%;
     }
+  }
+  @include tablet{
+    border-top: none;
+  }
+  @include desktop{
+    border-top: 1px solid rgba(229, 232, 234, 0.7294117647);
   }
 }
 
