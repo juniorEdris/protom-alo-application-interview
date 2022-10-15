@@ -185,6 +185,9 @@ select {
   padding: 1.555rem;
 }
 .full_ad .ad_section_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100px;
   width: 100%;
 }

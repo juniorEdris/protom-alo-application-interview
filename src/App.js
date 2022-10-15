@@ -1,10 +1,18 @@
-import React from "react";
-import { Route, Routes } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Logo from "./component/molecules/Logo";
 import Home from "./pages/Home";
 import NewsDetails from "./pages/NewsDetails";
 
 const App = () => {
+  const { pathname = "" } = useLocation();
+
+  useEffect(() => {
+    if (!pathname.includes("details/")) {
+      localStorage.removeItem("details");
+    }
+  }, [pathname]);
+
   return (
     <>
       <Logo />

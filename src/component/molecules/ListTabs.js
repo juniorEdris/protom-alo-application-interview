@@ -33,6 +33,7 @@ const ListTabs = ({ tabs }) => {
       <div className="list_heading">
         {news?.map((topic) => (
           <Headings
+            key={topic?.id}
             id={topic?.id}
             details={topic}
             customClass={topic?.sort ? `order-${topic?.sort}` : ""}

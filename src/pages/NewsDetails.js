@@ -11,10 +11,10 @@ const NewsDetails = () => {
   );
 
   useEffect(() => {
-    if (!id) {
+    if (!id || !details?.id) {
       navigate("/", { replace: true });
     }
-  }, [navigate, id]);
+  }, [navigate, id, details]);
 
   return (
     <Container>

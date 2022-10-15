@@ -6,7 +6,7 @@ const FullAd = () => {
     <div className="full_ad">
       <Anchore to={`/`}>
         <AdSection>
-          <div className="ad_section_content" />
+          <div className="ad_section_content">Ad</div>
         </AdSection>
       </Anchore>
     </div>

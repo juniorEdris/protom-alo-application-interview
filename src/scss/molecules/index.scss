@@ -74,6 +74,9 @@
   .ad_section {
     padding: 1.555rem;
     &_content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       height: 100px;
       width: 100%;
     }

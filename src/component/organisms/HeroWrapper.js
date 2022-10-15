@@ -16,7 +16,7 @@ const HeroWrapper = () => {
         </div>
         <div className="news_right_hero_secondary">
           {slicedNews?.map((news) => (
-            <HeroBodyImages news={news} />
+            <HeroBodyImages news={news} key={news?.id} />
           ))}
         </div>
       </div>
