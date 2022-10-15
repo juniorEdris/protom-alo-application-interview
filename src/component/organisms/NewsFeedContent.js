@@ -2,14 +2,17 @@ import React from "react";
 import { PostImage } from "../atoms";
 import HeadingsWithTime from "../molecules/HeadingsWithTime";
 
-const NewsFeedContent = () => {
+const NewsFeedContent = ({ topic }) => {
   return (
     <div className="newsfeed_content">
       <div>
-        <HeadingsWithTime />
+        <HeadingsWithTime
+          title={topic?.headline}
+          subtitle={topic?.subheadline}
+        />
       </div>
       <div>
-        <PostImage src="https://dummyimage.com/580x340/000/fff" alt="L" />
+        <PostImage src={topic?.thumb} alt="L" />
       </div>
     </div>
   );

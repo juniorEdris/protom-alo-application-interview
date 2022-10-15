@@ -23,7 +23,7 @@ const ListTabs = ({ tabs }) => {
 
   return (
     <>
-      <div className="list_tabs ">
+      <div className="list_tabs">
         {Object.values(tabData).map((tab, key) => (
           <TabButton
             key={key}
@@ -33,12 +33,13 @@ const ListTabs = ({ tabs }) => {
           />
         ))}
       </div>
-      <div>
+      <div className="list_heading">
         {news?.map((topic) => (
           <Headings
             id={topic?.id}
             title={topic?.headline}
             subtitle={topic?.subheadline}
+            customClass={topic?.sort ? `order-${topic?.sort}` : ""}
           />
         ))}
       </div>

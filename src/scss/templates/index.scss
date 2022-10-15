@@ -42,6 +42,15 @@
           @include border-bottom-2px-gray;
         }
       }
+      .newsfeed_wrapper{
+        .newsfeed_item{
+          &:not(:last-child) {
+            @include border-bottom-2px-gray;
+          }
+
+        }
+
+      }
     }
   
     @include tablet {

@@ -1,14 +1,11 @@
 import React from "react";
 import { AgoTime, NewsHeading } from "../atoms";
 
-const HeadingsWithTime = () => {
+const HeadingsWithTime = ({ title = "", subtitle = "", time = "১০" }) => {
   return (
     <div className="headings_with_time">
-      <NewsHeading
-        title={"মাসে ২ হাজার ৪০০ টাকা সম্মানী পান এই শিল্পীরা"}
-        subtitle={"akjsdhjksd"}
-      />
-      <AgoTime time="১" />
+      <NewsHeading title={title} subtitle={subtitle} />
+      <AgoTime time={time} />
     </div>
   );
 };

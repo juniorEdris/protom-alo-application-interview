@@ -38,10 +38,6 @@
   grid-gap: 10px;
   margin-bottom: 7px;
   padding: 10px 0;
-  @include border-bottom-2px-gray;
-  // :not(:last-child) {
-  //   @include border-bottom-2px-gray;
-  // }
   .headings_with_time {
     .news_heading {
       padding: 0px;

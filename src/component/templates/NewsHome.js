@@ -20,9 +20,7 @@ const NewsHome = () => {
         <div className="desktop_ad">
           <SmallAd />
         </div>
-        <div className="">
-          <NewsFeedWrapper />
-        </div>
+        <NewsFeedWrapper />
       </div>
     </div>
   );
