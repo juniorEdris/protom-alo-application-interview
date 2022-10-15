@@ -2,13 +2,14 @@
 @use "../breakpoints" as *;
 
 // Logo css
-.logo{
+.logo {
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 13px 20px -20px;
-  img{
+  img {
     height: 100px;
+    width: 150px;
   }
 }
 
@@ -33,7 +34,7 @@
     }
     h3 {
       color: $light;
-      .sub_heading{
+      .sub_heading {
         color: $yellow;
       }
     }
@@ -69,5 +70,34 @@
       height: 100px;
       width: 100%;
     }
+  }
+}
+
+// DETAILS PAGE CSS
+
+// Details heading css
+
+.deatils_heading {
+  @include border-bottom-2px-gray-2;
+  .topic {
+    font-size: 18px;
+    color: $emperor;
+    margin: 10px 0;
+    font-weight: 700;
+  }
+  &_headline {
+    color: $dark;
+    font-weight: 600;
+    margin: 10px 0;
+  }
+}
+
+// Details Description
+.details_description {
+  text-align: left;
+  @include tablet {
+    font-size: 18px;
+    width: 700px;
+    margin: 0 auto;
   }
 }

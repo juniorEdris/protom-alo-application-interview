@@ -206,4 +206,11 @@ select {
   color: #555;
 }
 
+@media only screen and (min-width: 876px) {
+  .news_details {
+    width: 800px;
+    margin: 0 auto;
+  }
+}
+
 /*# sourceMappingURL=home.css.map */

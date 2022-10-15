@@ -2,4 +2,12 @@
 @use "../breakpoints" as *;
 @use "../atoms" as *;
 
+// DETAILS PAGE CSS
 
+// News Details
+.news_details {
+  @include tablet {
+    width: 800px;
+    margin: 0 auto;
+  }
+}

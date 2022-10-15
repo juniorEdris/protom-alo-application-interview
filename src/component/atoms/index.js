@@ -62,3 +62,11 @@ export const AdSection = ({ children }) => (
 export const AgoTime = ({ time = "১", customClass = "" }) => (
   <span className={`${customClass} ago_time`}>{time} মিনিট আগে</span>
 );
+
+// details page -- topic
+export const Topic = ({ content }) => <h3 className={`topic`}>{content}</h3>;
+
+// description
+export const Description = ({ content }) => (
+  <div className={`description`}>{content}</div>
+);

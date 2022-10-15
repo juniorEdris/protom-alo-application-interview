@@ -29,6 +29,8 @@ $Margin: 10px;
 
 // primary classes
 // border
+
+// gray
 @mixin border-top-2px-gray {
   border-top: 2px solid $light-muted-color;
 }
@@ -41,6 +43,15 @@ $Margin: 10px;
 }
 @mixin border-bottom-2px-gray {
   border-bottom: 2px solid $light-muted-color;
+}
+// emperor
+@mixin border-bottom-2px-gray-2 {
+  border-bottom: 2px solid #94949445;
+}
+
+// emperor
+@mixin border-bottom-2px-emperor {
+  border-bottom: 2px solid $emperor;
 }
 
 // body class

@@ -153,4 +153,17 @@ select {
   }
 }
 
+.details_content_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+@media only screen and (min-width: 876px) {
+  .details_content_image .post_image {
+    max-width: 964px;
+    max-height: 540px;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */

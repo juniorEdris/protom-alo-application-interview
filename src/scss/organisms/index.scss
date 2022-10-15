@@ -54,3 +54,22 @@
     }
   }
 }
+
+
+// DETAILS PAGE CSS
+
+// Details Content
+.details_content{
+  &_image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    .post_image{
+      @include tablet{
+        max-width: 964px;
+        max-height: 540px;
+      }
+    }
+  }
+}
