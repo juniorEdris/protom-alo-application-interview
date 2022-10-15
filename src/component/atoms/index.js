@@ -1,5 +1,9 @@
 import { Link } from "react-router-dom";
 
+// container
+export const Container = ({ children }) => (
+  <div className="container">{children}</div>
+);
 // Logo
 export const LogoImage = ({ src, alt }) => (
   <img src={src} alt={alt} loading="eager" />
@@ -12,7 +16,7 @@ export const PostImage = ({ src = "", alt = "" }) => (
 
 export const NewsHeading = ({ title = "", subtitle = "", heading }) => (
   <div className="news_heading">
-    <Heading heading={heading} />
+    {heading && <Heading heading={heading} />}
     <h3 className="heading">
       {subtitle && <span className="sub_heading">{subtitle}</span>}
       {title}
@@ -21,11 +25,9 @@ export const NewsHeading = ({ title = "", subtitle = "", heading }) => (
 );
 
 // Anchores/Links
-export const Anchore = ({ children, id }) => (
+export const Anchore = ({ children, to = "/", target = "" }) => (
   <span className="anchore">
-    <Link to={`/details/${id}`} target="_blank">
-      {" "}
-      {/** add to var */}
+    <Link to={to} target={target}>
       {children}
     </Link>
   </span>
@@ -49,10 +51,14 @@ export const Heading = ({ heading, customClass = "" }) => (
 );
 
 // Overlay
-
 export const PrimaryOverlay = () => <div className="primary_overlay" />;
 
 // Ad Section
 export const AdSection = ({ children }) => (
   <div className="ad_section">{children}</div>
+);
+
+// Ago Time
+export const AgoTime = ({ time = "১", customClass = "" }) => (
+  <span className={`${customClass} ago_time`}>{time} মিনিট আগে</span>
 );

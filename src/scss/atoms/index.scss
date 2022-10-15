@@ -39,9 +39,6 @@
   margin-bottom: 6px;
   padding: 5px;
   transition: color 0.15ms;
-  :hover > span {
-    color: $lochmara-blue;
-  }
   h1 {
     margin-right: 10px;
     color: $gray;
@@ -94,11 +91,17 @@
 }
 
 // Priamry Overlay css
-
 .primary_overlay {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
+}
+
+// Ago time css
+.ago_time{
+  font-size: 12px;
+  font-weight: 700;
+  color: $emperor;
 }

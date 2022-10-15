@@ -4,7 +4,7 @@ import { Anchore, NewsHeading } from "../atoms";
 const Headings = ({ title, subtitle, id }) => {
   return (
     <div className="headings" key={id}>
-      <Anchore id={id}>
+      <Anchore to={`/details/${id}`}>
         <NewsHeading title={title} subtitle={subtitle} heading={"১"} />
       </Anchore>
     </div>

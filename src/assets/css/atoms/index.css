@@ -31,6 +31,9 @@ a {
 a:hover {
   color: #0573e6 !important;
 }
+a:hover span {
+  color: #0573e6 !important;
+}
 
 ul,
 li {
@@ -136,9 +139,6 @@ select {
   padding: 5px;
   transition: color 0.15ms;
 }
-.news_heading :hover > span {
-  color: #0573e6;
-}
 .news_heading h1 {
   margin-right: 10px;
   color: #949494;
@@ -198,6 +198,12 @@ select {
   left: 0;
   height: 100%;
   width: 100%;
+}
+
+.ago_time {
+  font-size: 12px;
+  font-weight: 700;
+  color: #555;
 }
 
 /*# sourceMappingURL=index.css.map */

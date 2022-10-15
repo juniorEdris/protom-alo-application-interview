@@ -1,6 +1,17 @@
 @use "../custom" as *;
 @use "../breakpoints" as *;
 
+// Logo css
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 13px 20px -20px;
+  img{
+    height: 100px;
+  }
+}
+
 // list tab css
 .headings {
   &:not(:last-child) {
@@ -22,6 +33,9 @@
     }
     h3 {
       color: $light;
+      .sub_heading{
+        color: $yellow;
+      }
     }
   }
 }
@@ -40,6 +54,19 @@
     padding: 1.555rem;
     &_content {
       height: 200px;
+      width: 100%;
+    }
+  }
+}
+// full_ad css
+
+.full_ad {
+  margin: 10px 0;
+  padding: 1.555rem;
+  .ad_section {
+    padding: 1.555rem;
+    &_content {
+      height: 100px;
       width: 100%;
     }
   }

@@ -1,10 +1,9 @@
 import React from "react";
-import { AdSection, Anchore, Heading } from "../atoms";
+import { AdSection, Anchore } from "../atoms";
 
-const SmallAd = () => {
+const FullAd = () => {
   return (
-    <div className="small_ad">
-      <Heading heading={"বিজ্ঞাপন"} />
+    <div className="full_ad">
       <Anchore to={`/`}>
         <AdSection>
           <div className="ad_section_content" />
@@ -14,4 +13,4 @@ const SmallAd = () => {
   );
 };
 
-export default SmallAd;
+export default FullAd;

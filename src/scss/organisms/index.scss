@@ -1,11 +1,7 @@
 @use "../custom" as *;
 @use "../breakpoints" as *;
-// Hero section image hover effects
-// .news_right_hero{
-//     img:hover{
-//         transform: scale(1.5);
-//     }
-// }
+
+// news list section css
 .list_wrapper {
   @include desktop {
     padding-right: 10px;
@@ -13,6 +9,48 @@
   }
 }
 
-.hero_wrapper{
-    @extend .list_wrapper
+// Hero section css
+.hero_wrapper {
+  @extend .list_wrapper;
+  margin-bottom: 10px;
+  @include border-bottom-2px-gray;
+  .news_heading {
+    display: flex;
+    h1,
+    h3,
+    .sub_heading {
+      font-size: 16px;
+      @include tablet {
+        font-size: 22px;
+      }
+    }
+  }
+  @include desktop{
+    border-bottom:none;
+    margin-bottom: 0px;
+  }
+}
+
+// news feed content css
+.newsfeed_content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin-bottom: 7px;
+  padding: 10px 0;
+  @include border-bottom-2px-gray;
+  // :not(:last-child) {
+  //   @include border-bottom-2px-gray;
+  // }
+  .headings_with_time {
+    .news_heading {
+      padding: 0px;
+      .heading {
+        font-size: 18px;
+        @include desktop{
+          font-size: 14px;
+        }
+      }
+    }
+  }
 }
