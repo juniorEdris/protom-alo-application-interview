@@ -25,8 +25,13 @@ export const NewsHeading = ({ title = "", subtitle = "", heading }) => (
 );
 
 // Anchores/Links
-export const Anchore = ({ children, to = "/", target = "" }) => (
-  <span className="anchore">
+export const Anchore = ({
+  children,
+  to = "/",
+  target = "",
+  callBack = () => {},
+}) => (
+  <span className="anchore" tabIndex={0} role="button" onClick={callBack}>
     <Link to={to} target={target}>
       {children}
     </Link>

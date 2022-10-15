@@ -1,15 +1,25 @@
-import React from "react";
-import { useParams } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import { Container } from "../component/atoms";
 import DetailsContent from "../component/organisms/DetailsContent";
 
 const NewsDetails = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
+  const [details, setDetails] = useState(
+    JSON.parse(localStorage.getItem("details")) || {}
+  );
+
+  useEffect(() => {
+    if (!id) {
+      navigate("/", { replace: true });
+    }
+  }, [navigate, id]);
+
   return (
     <Container>
       <div className="news_details">
-        <div>NewsDetails {id}</div>
-        <DetailsContent />
+        <DetailsContent details={details} />
       </div>
     </Container>
   );

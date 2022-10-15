@@ -1,18 +1,21 @@
 import React from "react";
-import { NewsHeading, PostImage, PrimaryOverlay } from "../atoms";
+import { Anchore, NewsHeading, PostImage, PrimaryOverlay } from "../atoms";
 
-const HeroHeadImage = () => {
+const HeroHeadImage = ({ news = {} }) => {
+  const handleDetails = (topic) => {
+    localStorage.setItem("details", JSON.stringify(topic));
+  };
+
   return (
-    <div className="hero_header_image">
-      <PrimaryOverlay />
-      <PostImage src={"https://dummyimage.com/964x540/000/fff"} alt={"l"} />
-      <div className="headline">
-        <NewsHeading
-          title={"মাসে ২ হাজার ৪০০ টাকা সম্মানী পান এই শিল্পীরা"}
-          subtitle={"akjsdhjksd"}
-        />
+    <Anchore to={`/details/${news?.id}`} callBack={() => handleDetails(news)}>
+      <div className="hero_header_image">
+        <PrimaryOverlay />
+        <PostImage src={news?.thumb} alt={"l"} />
+        <div className="headline">
+          <NewsHeading title={news?.headline} subtitle={news?.subheadline} />
+        </div>
       </div>
-    </div>
+    </Anchore>
   );
 };
 

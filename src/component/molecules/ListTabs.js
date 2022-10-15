@@ -7,8 +7,6 @@ const ListTabs = ({ tabs }) => {
   const [selectedTab, setSelectedTab] = useState("সর্বশেষ");
   const [news, setNews] = useState([]);
 
-  console.log(news);
-
   const handleTabNews = (tabName) => {
     setSelectedTab(tabName);
   };
@@ -17,7 +15,6 @@ const ListTabs = ({ tabs }) => {
     const allNews = Object.values(tabData)?.filter(
       (tab) => tab?.name === selectedTab
     );
-    console.log(allNews);
     setNews(allNews[0]?.items);
   }, [selectedTab]);
 
@@ -37,8 +34,7 @@ const ListTabs = ({ tabs }) => {
         {news?.map((topic) => (
           <Headings
             id={topic?.id}
-            title={topic?.headline}
-            subtitle={topic?.subheadline}
+            details={topic}
             customClass={topic?.sort ? `order-${topic?.sort}` : ""}
           />
         ))}

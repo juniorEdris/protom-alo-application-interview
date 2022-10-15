@@ -1,17 +1,17 @@
 import React from "react";
 import { Anchore, NewsHeading, PostImage } from "../atoms";
 
-const HeroBodyImages = () => {
+const HeroBodyImages = ({ news = {} }) => {
+  const handleDetails = (topic) => {
+    localStorage.setItem("details", JSON.stringify(topic));
+  };
   return (
-    <div className="">
-      <Anchore to={`/`}>
+    <div className={news?.sort ? `order-${news?.sort}` : ""} key={news?.id}>
+      <Anchore to={`/details/${news?.id}`} callBack={() => handleDetails(news)}>
         <div>
-          <PostImage src={"https://dummyimage.com/964x540/000/fff"} alt={"l"} />
+          <PostImage src={news?.thumb} alt={news?.headline} />
         </div>
-        <NewsHeading
-          title={"মাসে ২ হাজার ৪০০ টাকা সম্মানী পান এই শিল্পীরা"}
-          subtitle={"akjsdhjksd"}
-        />
+        <NewsHeading title={news?.headline} subtitle={news?.subheadline} />
       </Anchore>
     </div>
   );

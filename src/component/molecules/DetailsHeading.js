@@ -5,16 +5,10 @@ const DetailsHeading = ({ topic = "", heading = "" }) => {
   return (
     <div className="deatils_heading">
       <div>
-        <Topic content={topic || "মতামত"} />
+        <Topic content={topic} />
       </div>
       <div>
-        <Heading
-          customClass="deatils_heading_headline"
-          heading={
-            heading ||
-            "বঙ্গোপসাগরে নিখোঁজ এক জেলের লাশ উদ্ধার, আরেকজনের সন্ধান মেলেনি"
-          }
-        />
+        <Heading customClass="deatils_heading_headline" heading={heading} />
       </div>
     </div>
   );

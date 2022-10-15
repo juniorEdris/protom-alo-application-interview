@@ -3,17 +3,20 @@ import { PostImage } from "../atoms";
 import DetailsDescription from "../molecules/DetailsDescription";
 import DetailsHeading from "../molecules/DetailsHeading";
 
-const DetailsContent = () => {
+const DetailsContent = ({ details }) => {
   return (
     <div className="details_content">
       <div>
-        <DetailsHeading />
+        <DetailsHeading
+          topic={details?.subheadline}
+          heading={details?.headline}
+        />
       </div>
       <div className="details_content_image">
-        <PostImage src="https://dummyimage.com/964x540/000/fff" alt="image" />
+        <PostImage src={details?.thumb} alt={details?.headline} />
       </div>
       <div>
-        <DetailsDescription />
+        <DetailsDescription description={details?.descriptions} />
       </div>
     </div>
   );
